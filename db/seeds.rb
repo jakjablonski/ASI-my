@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+50.times do 
+	Article.create([{
+	title: Faker::Book.title,
+	text: Faker::Lorem.paragraphs(1),
+	id: Faker::Number.unique.between(1, 50)
+	}])
+	end
+	
+		
+500.times do 
+	Comment.create([{
+	commenter: Faker::HarryPotter.character,
+	body: Faker::HarryPotter.quote,
+	article_id: Faker::Number.between(1, 50)
+	}])
+	end
