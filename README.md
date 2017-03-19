@@ -1,24 +1,13 @@
-# README
+## Architektura serwisów internetowych 2016/17
+### Nazwa projektu: Blog 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+| Wersja Ruby   | Wersja Rails   | Baza danych |
+|------------|---------|-------------|
+|    2.3.3   |  5.0.2 | SQLite Postgres (Heroku) |
 
-* Ruby version
+#### Link do wdrożonej aplikacji https://rocky-beach-30006.herokuapp.com/
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Dodatkowe gemy: 
+1. rails-erd - gem generuje diagram ERD na podstawie modelu,
+2. audit - gem ,który sprawdza zabezpieczenia i w razie niebezpieczeństwa zgłasza problem.

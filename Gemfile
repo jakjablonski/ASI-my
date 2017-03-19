@@ -13,6 +13,7 @@ gem 'faker', '~> 1.7', '>= 1.7.3'
 gem 'rails-erd', '~> 1.5'
 gem 'bundler-audit', '~> 0.5.0'
 gem 'pg'
+gem 'rails_12factor', group: :production
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 # Use Puma as the app server
