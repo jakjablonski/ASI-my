@@ -9,5 +9,5 @@
 #### Link do wdrożonej aplikacji https://rocky-beach-30006.herokuapp.com/
 
 Dodatkowe gemy: 
-1. rails-erd - gem generuje diagram ERD na podstawie modelu,
+1. rails-erd - gem generuje diagram ERD na podstawie modelu, [przyklad](erd.pdf)
 2. audit - gem ,który sprawdza zabezpieczenia i w razie niebezpieczeństwa zgłasza problem.
