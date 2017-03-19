@@ -12,9 +12,9 @@ gem 'bootstrap-sass', '3.3.6'
 gem 'faker', '~> 1.7', '>= 1.7.3'
 gem 'rails-erd', '~> 1.5'
 gem 'bundler-audit', '~> 0.5.0'
-#gem 'pg'
+gem 'pg'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
