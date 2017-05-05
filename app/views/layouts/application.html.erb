@@ -9,9 +9,9 @@
   </head>
 
   <body>
-  
-  
-  
+
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -24,9 +24,16 @@
                     <span class="icon-bar"></span>
                 </button>
                 <%= link_to "Blog", articles_path, class: "navbar-brand" %>
-				<%= link_to "New article", new_article_path, class: "navbar-brand" %>
+                <%if !user_signed_in? %>
+                  <%= link_to"Login", new_user_session_path, class: "navbar-brand" %>
+                <% end %>
+
+<%if user_signed_in? %>
+    <%= link_to "New article", new_article_path, class: "navbar-brand" %>
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "navbar-brand") %>
+<% end %>
             </div>
-            
+
         </div>
     </nav>
 <br/><br/>
@@ -36,21 +43,24 @@
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
+
                 <h1 class="page-header">
-                    Blog 
+                  <p class="notice"><%= notice %></p>
+                <p class="alert"><%= alert %></p>
+                    Blog
                 </h1>
             </div>
-				
+
               <%= yield %>
-			
+
         </div>
 
- 
+
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    
+
                 </div>
             </div>
         </footer>
