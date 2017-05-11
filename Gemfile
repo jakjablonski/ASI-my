@@ -18,6 +18,10 @@ gem 'rails_12factor', group: :production
 gem 'sqlite3'
 gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+gem 'simple_form', '~> 3.4'
+gem 'markdown', '~> 1.2'
+gem 'redcarpet', '~> 3.4'
+gem 'acts_as_votable', '~> 0.10.0'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
