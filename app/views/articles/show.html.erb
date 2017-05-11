@@ -2,6 +2,19 @@
 <h3><%= @article.title %></h3>
 <%= markdown @article.text %>
 
+
+<%= link_to like_article_path(@article), method: :put do %>
+  <button type="button" class="btn btn-success" aria-label="Left Align">
+    <span class="glyphicon.glyphicon-thumbs-up" aria-hidden="true"></span>
+    <span class="badge"><%= @article.get_upvotes.size %></span>
+  </button>
+<% end %>
+<%= link_to dislike_article_path(@article), method: :put do %>
+  <button type="button" class="btn btn-danger" aria-label="Left Align">
+    <span class="glyphicon.glyphicon-thumbs-down" aria-hidden="true"></span>
+    <span class="badge"><%= @article.get_downvotes.size %></span>
+  </button>
+<% end %>
   Created by:
   <%= @article.user.email %>
 

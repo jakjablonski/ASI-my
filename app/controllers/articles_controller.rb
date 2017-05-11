@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
 
+before_action :authenticate_user!, except: [:index, :show]
   def index
     @articles = Article.all
   end
@@ -27,6 +28,17 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def upvote
+    @article = Article.find(params[:id])
+    @article.upvote_by(current_user)
+    redirect_to request.referer
+  end
+  def downvote
+    @article = Article.find(params[:id])
+    @article.downvote_by(current_user)
+    redirect_to request.referer
+  end
+
   def update
     @article = Article.find(params[:id])
       if @article.update(article_params)
@@ -52,4 +64,5 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(:title, :text)
     end
+
 end
