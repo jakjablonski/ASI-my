@@ -14,7 +14,7 @@ gem 'rails-erd', '~> 1.5'
 gem 'bundler-audit', '~> 0.5.0'
 gem 'pg'
 gem 'rails_12factor', group: :production
-# Use sqlite3 as the database for Active Record
+#Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'

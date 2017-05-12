@@ -2,10 +2,10 @@
 <% @articles.each do |article| %>
 	<div class="col-md-4">
 		<div class="panel panel-default" >
-			<div class="panel-heading" >
-                <h3><i class="fa fa-fw fa-gift" style=" text-align:center;"></i><%= article.title %></h3>
+			<div class="panel-heading" style=" height:90px; text-align:center; " >
+                <h3><i class="fa fa-fw fa-gift"></i><%= article.title %></h3>
             </div>
-            <div class="panel-body" style=" height:90px; text-align:center;" >
+            <div class="panel-body" style="  text-align:center;" >
 
 							    <span class="label label-success label-as-badge"><%= article.get_upvotes.size %></span>
 							    <span class="label label-danger label-as-badge"><%= article.get_downvotes.size %></span>
