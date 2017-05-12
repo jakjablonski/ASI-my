@@ -12,10 +12,10 @@ gem 'bootstrap-sass', '3.3.6'
 gem 'faker', '~> 1.7', '>= 1.7.3'
 gem 'rails-erd', '~> 1.5'
 gem 'bundler-audit', '~> 0.5.0'
-#gem 'pg'
+gem 'pg'
 gem 'rails_12factor', group: :production
 #Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 gem 'simple_form', '~> 3.4'
