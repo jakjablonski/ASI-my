@@ -8,6 +8,11 @@
 
 #### Link do wdrożonej aplikacji https://rocky-beach-30006.herokuapp.com/
 
+Storna blogu, pozwala dodwać wpisy i komentarze oraz  ma możliwość oceniania wpisów.
+
 Dodatkowe gemy: 
 1. rails-erd - gem generuje diagram ERD na podstawie modelu, [przyklad](erd.pdf)
-2. audit - gem ,który sprawdza zabezpieczenia i w razie niebezpieczeństwa zgłasza problem.
+2. redcarpet - markdown
+3. acts_as_votable - głosowanie na wpisy
+4. simple_form - szybsze i łatwiejsze formy
+5. Devise - autoryzacja
